@@ -54,9 +54,9 @@ class driver extends uvm_driver #(seq_item);
 					vif.driver_cb.clrN   <= req.clrN;
 					vif.driver_cb.w_en <= req.w_en;
 					vif.driver_cb.r_en <= req.r_en;
-                  $display("======== time  t data is written in vif = %0d ns ===========",$time);
+                 // $display("======== time  t data is written in vif = %0d ns ===========",$time);
 				  item_collected_port.write(req);
-				  $display("======== time  t data is written in dr to sb = %0d ns ===========",$time);
+				 // $display("======== time  t data is written in dr to sb = %0d ns ===========",$time);
                 end
 		/*	else
 				begin

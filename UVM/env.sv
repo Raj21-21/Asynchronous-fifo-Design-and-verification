@@ -22,7 +22,7 @@ class env extends uvm_env;
 	
 	function void connect_phase(uvm_phase phase);
 		ag.mon.item_collected_port.connect(sb.monitor_1);
-      	ag.dr.item_collected_port.connect(sb.driver_2); // instead of this use driver
+      	ag.dr.item_collected_port.connect(sb.driver_2); //  used driver to write data into scorboard
 	endfunction
 
 endclass
